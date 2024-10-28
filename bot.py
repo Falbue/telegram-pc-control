@@ -57,7 +57,7 @@ def callback_query(call):
 
 
     if call.data == "munu_music":
-        bot.edit_message_text(chat_id=ID_ADMIN, message_id=config.MESSAGE, text="Управление мультимедиа", reply_markup=keyboard_music)
+        bot.edit_message_text(chat_id=ID_ADMIN, message_id=message_id, text="Управление мультимедиа", reply_markup=keyboard_music)
 
 
     if call.data == 'music_next':
@@ -73,7 +73,7 @@ def callback_query(call):
 
 
     if call.data == 'back_main':
-        bot.edit_message_text(chat_id=ID_ADMIN, message_id=config.MESSAGE, text="Выбрите действие", reply_markup=keyboard_main)
+        bot.edit_message_text(chat_id=ID_ADMIN, message_id=message_id, text="Выбрите действие", reply_markup=keyboard_main)
 
 
 
